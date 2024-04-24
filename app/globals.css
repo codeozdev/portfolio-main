@@ -119,3 +119,7 @@
     }
 }
 
+.dark-gradient {
+    background: radial-gradient(farthest-corner at 50% 50%, transparent, rgb(9, 9, 11) 70%);
+}
+

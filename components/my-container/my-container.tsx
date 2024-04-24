@@ -3,7 +3,7 @@ import { BsGithub, BsLinkedin, BsTwitterX } from "react-icons/bs";
 import Link from "next/link";
 
 export default function MyContainer() {
-  const li = `hover:scale-110 duration-500 ease-in-out cursor-pointer border border-[#8750F7] rounded-full fill-[#8750F7] p-2`;
+  const li = `hover:scale-110 duration-500 ease-in-out cursor-pointer border border-red-500 dark:border-[#8750F7] rounded-full fill-[#8750F7] p-2`;
 
   return (
     <div className="w-full h-full relative">
@@ -50,11 +50,14 @@ export default function MyContainer() {
         </div>
       </div>
       {/*overlay*/}
-      <div className="bg-[url('/Untitled.jpg')] h-full w-full absolute inset-0 animate-pulse" />
-      <div className="bg-black/60 absolute inset-0 w-full h-full" />
+      <div className="dark:bg-[url('/Untitled.jpg')] h-full w-full absolute inset-0 dark: animate-pulse" />
+      <div className="dark:absolute inset-0 w-full h-full dark-gradient" />
     </div>
   );
 }
+//dark:absolute  vermemizin sebebi dark-gradient custom css'e dark mod olarak atayamadigimizdan dolayi
 
-//border border-[#8750F7] size-8 rounded-full fill-[#8750F7]
-// <div className="bg-black/80 absolute inset-0 w-full h-full"></div>
+/*
+ * Textlerin secimini kapat
+ *
+ *  */
