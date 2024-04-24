@@ -78,7 +78,7 @@
     }
 
     h1 {
-        @apply text-6xl font-bold font-sora text-black dark:bg-gradient-to-r from-[#8B56F7] to-white inline-block dark:text-transparent bg-clip-text py-5;
+        @apply text-3xl md:text-6xl font-bold font-sora text-black dark:bg-gradient-to-r from-[#8B56F7] to-white inline-block dark:text-transparent bg-clip-text py-5;
     }
 
     h2 {
@@ -86,7 +86,7 @@
     }
 
     h3 {
-        @apply text-4xl font-bold;
+        @apply text-xl md:text-4xl font-bold;
     }
 
     h4 {
