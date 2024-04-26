@@ -4,7 +4,7 @@ import SkillsItem from "@/components/skills/skills-item";
 export default function SkillsList() {
   return (
     <div
-      className="text-center xl:text-start p-10"
+      className="text-center xl:text-start p-10 container"
       id="skills"
     >
       <div className="flex flex-col">
@@ -29,7 +29,7 @@ export default function SkillsList() {
 
         {/* EXTRA */}
         <SkillsItem
-          name="EXTRA"
+          name="EXTR"
           items={extra}
         />
       </div>

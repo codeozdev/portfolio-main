@@ -4,6 +4,7 @@ import "./globals.css";
 import MainContainer from "@/components/container/main-container";
 import Header from "@/components/navigation/header";
 import { ThemeProvider } from "@/components/theme-provider/theme-provider";
+import LeftText from "@/components/left-text";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -26,7 +27,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          {/*<LeftText />*/}
+          <LeftText />
 
           <Header />
           <MainContainer>{children}</MainContainer>

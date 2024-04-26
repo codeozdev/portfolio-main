@@ -3,9 +3,11 @@ import { BsGithub, BsLinkedin, BsTwitterX } from "react-icons/bs";
 import Link from "next/link";
 
 export default function MyContainer() {
+
   const li = `hover:scale-110 duration-500 ease-in-out cursor-pointer border border-red-500 dark:border-[#8750F7] rounded-full fill-[#8750F7] p-2`;
   const mid = `md:max-w-[400px] md:max-h-[440px]`;
   const isDark = `dark:bg-[#140C1C] dark:border-[#8650F6] dark:border`;
+
 
   return (
     <div className="w-full h-full relative">
@@ -18,11 +20,9 @@ export default function MyContainer() {
               Web Developer + UX Designer
             </h1>
             <p className="font-sora text-center md:text-start md:text-xl tracking-wide md:min-w-[500px]">
-              I break down complex user experinece problems to create integritiy focussed solutions
-              that connect billions of people
+              I have been working in both frontend and backend development for 1.5 years, and I am passionate about keeping up with industry inn ovations and adapting to new technologies. I am confident in my ability to solve problems and produce efficient solutions.
             </p>
-
-            <ul className="flex gap-5 mt-10 items-center md:justify-start justify-center">
+            <ul className="flex gap-5 mt-5 md:mt-10 items-center md:justify-start justify-center">
               <li className={li}>
                 <Link href="#">
                   <BsTwitterX />
