@@ -14,15 +14,26 @@ export default function MyContainer() {
       <div className="p-5 md:p-10 relative z-20">
         {/* GRID */}
         <div className="grid grid-cols-1 gap-10 md:gap-0 md:grid-cols-2 place-items-center">
-          <div className="w-full h-fit">
+          <div className="w-full h-fit space-y-5">
             <h3>I am Oguz</h3>
+            <div className="md:hidden w-full flex justify-center items-center">
+              {/*MOBILE IMAGE*/}
+              <Image
+                src="/photo.png"
+                alt="img"
+                width={500}
+                height={500}
+                className={`max-w-40 max-h-40 object-cover object-top grayscale hover:grayscale-0 rounded-full ${mid} ${isDark}`}
+                sizes="60vw"
+              />
+            </div>
             <h1 className="max-w-[300px] md:max-w-[600px] tracking-wider leading-tight">
               Web Developer + UX Designer
             </h1>
             <p className="font-sora text-center md:text-start md:text-xl tracking-wide md:min-w-[500px]">
               I have been working in both frontend and backend development for 1.5 years, and I am passionate about keeping up with industry inn ovations and adapting to new technologies. I am confident in my ability to solve problems and produce efficient solutions.
             </p>
-            <ul className="flex gap-5 mt-5 md:mt-10 items-center md:justify-start justify-center">
+            <ul className="flex gap-5 items-center md:justify-start justify-center">
               <li className={li}>
                 <Link href="#">
                   <BsTwitterX />
@@ -40,13 +51,13 @@ export default function MyContainer() {
               </li>
             </ul>
           </div>
-          <div>
+          <div className="hidden md:block">
             <Image
               src="/photo.png"
               alt="img"
               width={500}
               height={500}
-              className={`max-w-52 max-h-max object-cover grayscale hover:rotate-0 rotate-6 transition-all duration-300 ease-in-out hover:grayscale-0 rounded-3xl ${mid} ${isDark}`}
+              className={`max-w-52 max-h-max object-cover grayscale hover:rotate-0 rotate-6 transition-all duration-300 ease-in-out hover:grayscale-0 rounded-3xl  ${mid} ${isDark}`}
               sizes="60vw"
             />
           </div>

@@ -29,7 +29,7 @@ export default function SkillsList() {
 
         {/* EXTRA */}
         <SkillsItem
-          name="EXTR"
+          name="EXTRA"
           items={extra}
         />
       </div>

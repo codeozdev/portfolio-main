@@ -78,11 +78,11 @@
   }
 
   h1 {
-    @apply text-3xl md:text-6xl font-bold font-sora text-black dark:bg-gradient-to-r from-[#8B56F7] to-white inline-block dark:text-transparent bg-clip-text py-5;
+    @apply text-3xl md:text-6xl font-bold font-sora text-black dark:bg-gradient-to-r from-[#8B56F7] to-white inline-block dark:text-transparent bg-clip-text;
   }
 
   h2 {
-    @apply text-5xl font-bold font-sora text-center text-black dark:bg-gradient-to-r from-[#8B56F7] to-white inline-block dark:text-transparent bg-clip-text py-5;
+    @apply text-2xl md:text-5xl font-bold font-sora text-center text-black dark:bg-gradient-to-r from-[#8B56F7] to-white inline-block dark:text-transparent bg-clip-text;
   }
 
   h3 {
@@ -90,7 +90,7 @@
   }
 
   h4 {
-    @apply text-[11px] tracking-wider font-semibold uppercase mt-10 mb-3;
+    @apply text-[11px] tracking-wider font-semibold uppercase mt-4 md:mt-10 mb-3;
   }
 }
 

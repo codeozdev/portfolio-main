@@ -7,7 +7,6 @@ export default function LeftText() {
 
   useEffect(() => {
     const handleScroll = () => {
-      // Sayfa boyutunu al
       const windowHeight = window.innerHeight;
       const fullHeight = document.body.scrollHeight;
       const scrollY = window.scrollY;
@@ -16,17 +15,14 @@ export default function LeftText() {
       // console.log("windowHeight", windowHeight);
       // console.log("scrollY", scrollY);
 
-      // Sayfa boyunun %20'si, 0.2 ile çarpılır
       const scrollPercentage = (scrollY / (fullHeight - windowHeight)) * 100;
 
       console.log(scrollPercentage); // buradaki degere gore div elementimiz gorunecek
 
 
-      // Eğer scroll yüzde 20'den küçükse veya yüzde 100'e eşitse, elementi görünür yap
-      if (scrollPercentage >= 40) {
+      if (scrollPercentage >= 50) {
         setIsVisible(true);
       } else {
-        // Scroll yüzde 20 ila 100 arasındaysa, elementi gizle
         setIsVisible(false);
       }
     };

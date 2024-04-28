@@ -18,7 +18,7 @@ export default function Header() {
             href="#skills"
             className="navbar_link relative"
           >
-            About
+            Skills
           </Link>
         </li>
 

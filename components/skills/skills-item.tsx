@@ -9,7 +9,7 @@ interface SkillsItemProps {
 }
 
 export default function SkillsItem({ name, items }: SkillsItemProps) {
-  const isDark = `dark:bg-black dark:border-[#8650F6] dark:group-hover:border dark:group-hover:brightness-150 dark:shadow-none`;
+
 
   return (
     <>
@@ -21,7 +21,7 @@ export default function SkillsItem({ name, items }: SkillsItemProps) {
             key={item.id}
           >
             <div
-              className={`flex items-center flex-col justify-center gap-3 w-full h-full aspect-square text-center p-3 shadow-2xl ${isDark}`}
+              className={`flex items-center flex-col justify-center gap-3 w-full h-full aspect-square text-center p-3 shadow-lg dark:shadow-sky-950`}
               key={item.id}
             >
               <Image
@@ -30,7 +30,7 @@ export default function SkillsItem({ name, items }: SkillsItemProps) {
                 width={200}
                 height={200}
                 quality={100}
-                className="w-[50px] h-[50px] sm:w-[75px] sm:h-[75px] md:w-[100px] md:h-[100px] dark:grayscale group-hover:grayscale-0 transition-all duration-300 ease-in-out"
+                className="w-[50px] h-[50px] sm:w-[75px] sm:h-[75px] md:w-[100px] md:h-[100px] dark:group-hover:brightness-110"
               />
               <p className="font-bold text-[10px] sm:text-sm text-neutral-600 dark:group-hover:text-white">
                 {item.title}
