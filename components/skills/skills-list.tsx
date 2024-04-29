@@ -4,7 +4,7 @@ import SkillsItem from "@/components/skills/skills-item";
 export default function SkillsList() {
   return (
     <div
-      className="text-center xl:text-start p-10 container"
+      className="text-center xl:text-start w-full"
       id="skills"
     >
       <div className="flex flex-col">

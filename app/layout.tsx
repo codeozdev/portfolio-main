@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import MainContainer from "@/components/container/main-container";
 import Header from "@/components/navigation/header";
 import { ThemeProvider } from "@/components/theme-provider/theme-provider";
 import LeftText from "@/components/left-text";
+import RightText from "@/components/right-text";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={`overflow-x-hidden ${inter.className}`}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
@@ -28,9 +28,9 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <LeftText />
-
+          <RightText />
           <Header />
-          <MainContainer>{children}</MainContainer>
+          {children}
         </ThemeProvider>
       </body>
     </html>

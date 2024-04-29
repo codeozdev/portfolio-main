@@ -10,27 +10,25 @@ export default function MyContainer() {
 
 
   return (
-    <div className="w-full h-full relative">
-      <div className="p-5 md:p-10 relative z-20">
+    <div className="w-full h-full relative mt-5 md:mt-10">
+      <div className="relative z-20">
         {/* GRID */}
-        <div className="grid grid-cols-1 gap-10 md:gap-0 md:grid-cols-2 place-items-center">
-          <div className="w-full h-fit space-y-5">
+        <div className="grid grid-cols-1 gap-10 md:gap-0 md:grid-cols-2 place-items-center container">
+          <div className="w-full h-fit space-y-5 flex justify-center md:justify-start md:items-start flex-col items-center text-center md:text-start">
             <h3>I am Oguz</h3>
-            <div className="md:hidden w-full flex justify-center items-center">
-              {/*MOBILE IMAGE*/}
-              <Image
-                src="/photo.png"
-                alt="img"
-                width={500}
-                height={500}
-                className={`max-w-40 max-h-40 object-cover object-top grayscale hover:grayscale-0 rounded-full ${mid} ${isDark}`}
-                sizes="60vw"
-              />
-            </div>
+            {/*MOBILE IMAGE*/}
+            <Image
+              src="/photo.png"
+              alt="img"
+              width={500}
+              height={500}
+              className={`max-w-40 max-h-40 object-cover object-top grayscale hover:grayscale-0 rounded-full md:hidden w-full ${mid} ${isDark}`}
+              sizes="60vw"
+            />
             <h1 className="max-w-[300px] md:max-w-[600px] tracking-wider leading-tight">
               Web Developer + UX Designer
             </h1>
-            <p className="font-sora text-center md:text-start md:text-xl tracking-wide md:min-w-[500px]">
+            <p className="font-sora text-center md:text-start text-base md:text-lg tracking-wide md:min-w-[700px]">
               I have been working in both frontend and backend development for 1.5 years, and I am passionate about keeping up with industry inn ovations and adapting to new technologies. I am confident in my ability to solve problems and produce efficient solutions.
             </p>
             <ul className="flex gap-5 items-center md:justify-start justify-center">
@@ -64,7 +62,7 @@ export default function MyContainer() {
         </div>
       </div>
       {/*overlay*/}
-      <div className="dark:bg-[url('/Untitled.jpg')] h-full w-full absolute inset-0 dark: animate-pulse" />
+      <div className="dark:bg-[url('/Untitled.jpg')] h-full w-full absolute inset-0 bg-left dark:animate-pulse" />
       <div className="dark:absolute inset-0 w-full h-full dark-gradient" />
     </div>
   );
