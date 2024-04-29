@@ -3,10 +3,10 @@ import Link from "next/link";
 
 export default function ProjectItem({ title, link, tools, tags }: ProjectProps) {
   return (
-    <div className="w-full">
+    <div className="w-full hover:scale-105 duration-300 ease-out">
       <div className="flex flex-col md:flex-row gap-10 dark:bg-neutral-900/30 backdrop-blur-sm border border-neutral-800 p-4 sm:p-6 rounded-xl">
-        <div className="flex-1 flex flex-col gap-5 sm:justify-between">
-          <h2 className="capitalize text-3xl font-bold">{title}</h2>
+        <div className="flex-1 flex flex-col gap-5 md:gap-0 md:justify-evenly">
+          <h2 className="capitalize md:text-3xl font-bold text-center md:text-start">{title}</h2>
           <Link
             href={link}
             className="px-8 py-4 capitalize border border-black/40 dark:border-white/20 rounded-[9999px] flex items-center justify-center text-sm font-medium w-max gap-1.5 hover:border-black dark:hover:border-white transition group mx-auto md:mx-0"
@@ -37,7 +37,7 @@ export default function ProjectItem({ title, link, tools, tags }: ProjectProps) 
         <div className="space-y-6 flex-1">
           {/*TOOL*/}
           <div className="space-y-2">
-            <h3 className="font-bold capitalize">tools</h3>
+            <h6 className="font-bold text-2xl capitalize">tools</h6>
             <div className="flex flex-wrap gap-2 justify-center md:justify-start">
               {tools.map(tool => (
                 <div
@@ -51,7 +51,7 @@ export default function ProjectItem({ title, link, tools, tags }: ProjectProps) 
           </div>
           {/*TAGS*/}
           <div className="space-y-2">
-            <h3 className="font-bold capitalize">tags</h3>
+            <h6 className="font-bold text-2xl capitalize">tags</h6>
             <div className="flex justify-center md:justify-start flex-wrap gap-2">
               {tags.map(tag => (
                 <div

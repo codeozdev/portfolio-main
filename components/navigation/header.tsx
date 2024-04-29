@@ -23,6 +23,15 @@ export default function Header() {
         </li>
 
         <li>
+          <Link
+            href="#projects"
+            className="navbar_link relative"
+          >
+            Projects
+          </Link>
+        </li>
+
+        <li>
           <ThemeController />
         </li>
       </ul>

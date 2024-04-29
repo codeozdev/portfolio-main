@@ -3,8 +3,8 @@ import { ProjectProps, projects } from "@/types/projects";
 
 export default function ProjectsList() {
   return (
-    <div className="w-full">
-      <h2>My Skills</h2>
+    <div className="w-full" id="projects">
+      <h2 className="text-center w-full">My Recent Works</h2>
       <div className="flex flex-col items-center justify-center gap-5 my-5 w-full">
         {projects.map((project: ProjectProps) => (
           <div
