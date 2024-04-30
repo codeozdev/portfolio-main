@@ -38,9 +38,16 @@ export default function RightText() {
   return (
     <div className={`sticky top-1/3 -translate-y-1/2 right-8  ${isVisible ? "" : "hidden"}`}>
       <div className="absolute top-1/2 -translate-y-1/2 2xl:-right-14 3xl:-right-8 uppercase w-64 rotate-90 dark:text-neutral-600 hidden md:block select-none">
-      <div className="2xl:text-8xl 3xl:text-9xl font-black tracking-[-10px]">developer</div>
+        <div className="2xl:text-8xl 3xl:text-9xl font-black tracking-[-10px]">developer</div>
         <div className="2xl:text-7xl 3xl:text-8xl font-black tracking-[-10px]">designer</div>
       </div>
     </div>
   );
 }
+
+
+/* 
+ 
+Duzeltilmesi gereken seyler var
+
+ */
