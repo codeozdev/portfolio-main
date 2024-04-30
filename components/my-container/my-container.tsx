@@ -1,6 +1,6 @@
 import Image from "next/image";
-import { BsGithub, BsLinkedin, BsTwitterX } from "react-icons/bs";
 import Link from "next/link";
+import { BsGithub, BsLinkedin, BsTwitterX } from "react-icons/bs";
 
 export default function MyContainer() {
 

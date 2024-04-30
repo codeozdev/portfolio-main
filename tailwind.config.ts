@@ -75,6 +75,9 @@ const config = {
       fontFamily: {
         sora: ["Sora", "sans-serif"],
       },
+      screens: {
+        "3xl": "2000px",
+      },
     },
   },
   plugins: [require("tailwindcss-animate")],
