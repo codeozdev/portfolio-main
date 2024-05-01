@@ -31,9 +31,7 @@ export default function Header() {
           </Link>
         </li>
 
-        <li>
-          <ThemeController />
-        </li>
+        <ThemeController />
       </ul>
     </nav>
   );

@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function ProjectItem({ title, link, tools, tags }: ProjectProps) {
   return (
-    <div className="w-full hover:scale-110 duration-300 ease-out">
+    <div className="w-full 2xl:hover:scale-105 3xl:hover:scale-110 duration-300 ease-out">
       <div className="flex flex-col md:flex-row gap-10 dark:bg-neutral-900/30 backdrop-blur-sm border border-neutral-800 p-4 sm:p-6 rounded-xl">
         <div className="flex-1 flex flex-col gap-5 md:gap-0 md:justify-evenly">
           <h2 className="capitalize md:text-3xl font-bold text-center md:text-start">{title}</h2>

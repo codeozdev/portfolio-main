@@ -37,7 +37,7 @@ export default function LeftText() {
   }, []);
 
   return (
-    <div className={`sticky top-1/2 translate-y-1/2 -left-8 `}>
+    <div className={`sticky top-1/2 translate-y-1/2 -left-8 ${isVisible ? "" : "hidden"} `}>
       <div className="absolute top-1/2 translate-y-1/2 2xl:-left-14 3xl:-left-8 uppercase w-64 -rotate-90 dark:text-neutral-600 hidden md:block select-none">
         <div className="2xl:text-8xl 3xl:text-9xl font-black tracking-[-10px]">developer</div>
         <div className="2xl:text-7xl 3xl:text-8xl font-black tracking-[-10px]">designer</div>
