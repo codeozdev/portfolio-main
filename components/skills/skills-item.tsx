@@ -9,8 +9,6 @@ interface SkillsItemProps {
 }
 
 export default function SkillsItem({ name, items }: SkillsItemProps) {
-
-
   return (
     <>
       <h4 className="dark:bg-black w-fit px-2 shadow-lg">{name}</h4>
